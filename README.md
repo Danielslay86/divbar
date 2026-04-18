@@ -51,17 +51,22 @@ To remove divs, launch DivBar and pick **Uninstall / Remove**. You get three opt
 ## Screenshots
 
 ### KDE Plasma
-![Main menu](screenshots/kde-main.png) ![Orientation picker](screenshots/kde-orientation.png)
+![Main menu](screenshots/kde-main.png) 
+
+![Orientation picker](screenshots/kde-orientation.png)
+
 ![Style picker](screenshots/kde-styles.png)
 
 Divs on bottom panel:
 ![Bottom taskbar with divs](screenshots/kde-taskbar-bottom.png)
 
 Divs on left panel:
-![Left taskbar with divs](screenshots/kde-taskbar-left.png)
+<img src="screenshots/kde-taskbar-left.png" alt="KDE left taskbar with divs" height="400">
 
-### Gnome
-![Main menu](screenshots/gnome-main.png) ![Orientation picker](screenshots/gnome-orientation.png)
+### GNOME
+![Main menu](screenshots/gnome-main.png) 
+
+![Orientation picker](screenshots/gnome-orientation.png)
 
 Divs on bottom panel (Dash to Panel Extension):
 ![Bottom taskbar with divs](screenshots/gnome-taskbar.png)
