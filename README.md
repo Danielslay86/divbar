@@ -14,7 +14,7 @@ No panel plugins. No widgets. No compilation.
 
 Bash 4.4+, and either `zenity` or `kdialog` for the dialogs. Zenity ships with most GTK desktops (GNOME, XFCE, Cinnamon, MATE, Budgie, Pantheon). Plasma ships kdialog. DivBar figures out which one you have and uses it.
 
-Tested on KDE Plasma, GNOME, XFCE, Cinnamon, MATE, LXQt, Budgie, Pantheon, Sway, Hyprland, i3, LXDE, Deepin, Enlightenment, and headless.
+Tested on KDE Plasma, GNOME, XFCE, Cinnamon, MATE, LXQt, Budgie, Pantheon, Sway, Hyprland, i3, LXDE, Deepin, Enlightenment.
 
 ## Install
 
