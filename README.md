@@ -44,9 +44,27 @@ No root needed. Nothing outside `$HOME` gets touched.
 
 ## Usage
 
-Launch DivBar from your application menu, pick **Add New Div**, choose orientation (vertical for top/bottom taskbars, horizontal for side ones), pick a style or bring your own image. The new div shows up in your app menu and you drag it to the taskbar from there.
+Launch DivBar from your application menu, pick **Add New Div**, choose orientation (vertical for top/bottom taskbars, horizontal for side ones), pick a style or bring your own image. The new div shows up in your app launcher. Search "div" in your launcher, then drag or pin it onto the taskbar.
 
 To remove divs, launch DivBar and pick **Uninstall / Remove**. You get three options: clear only the generated divs, complete uninstall of DivBar itself, or select specific divs to remove. Individual divs can also be unpinned directly from the taskbar.
+
+## Screenshots
+
+### KDE Plasma
+![Main menu](screenshots/kde-main.png) ![Orientation picker](screenshots/kde-orientation.png)
+![Style picker](screenshots/kde-styles.png)
+
+Divs on bottom panel:
+![Bottom taskbar with divs](screenshots/kde-taskbar-bottom.png)
+
+Divs on left panel:
+![Left taskbar with divs](screenshots/kde-taskbar-left.png)
+
+### Gnome
+![Main menu](screenshots/gnome-main.png) ![Orientation picker](screenshots/gnome-orientation.png)
+
+Divs on bottom panel (Dash to Panel Extension):
+![Bottom taskbar with divs](screenshots/gnome-taskbar.png)
 
 ## How it works
 
@@ -98,6 +116,8 @@ Installer bails if run as root. All destructive ops are scoped to `$HOME/.local/
 **"No dialog tool found."** Install zenity (`sudo apt install zenity`) or kdialog (`sudo apt install kdialog`) depending on your DE.
 
 **Div doesn't show up after adding it on KDE.** Run `kbuildsycoca5` or `kbuildsycoca6` manually. The installer does this automatically but sometimes the cache needs a nudge.
+
+**Not all divs appear on the taskbar.** Plasma's Icons-Only Task Manager has rendering quirks that depend on panel orientation, size, DPI, and icon density. On some setups — especially narrow vertical panels — divs past the first few may not render even though their `.desktop` files exist. Workarounds: search for "Div" in your app launcher and drag from there, or try the standard Task Manager widget which handles custom entries differently.
 
 **Div doesn't show up after adding it on other DEs.** Log out and back in. Most DEs watch `~/.local/share/applications/` for new files, but some only rescan on session start.
 
