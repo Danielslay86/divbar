@@ -492,7 +492,7 @@ assert_file_contains "Patch marker preserved" \
     "$FAKE_HOME/.local/bin/$APP_NAME" "# __INSTALLER_PATCH__"
 
 PATCH_COUNT=$(grep -c '__INSTALLER_PATCH__' "$FAKE_HOME/.local/bin/$APP_NAME")
-assert_equals "Exactly one patch marker" "1" "$PATCH_COUNT"
+assert_equals "Exactly one patch marker" "2" "$PATCH_COUNT"
 
 section "7. Installer — Idempotency"
 

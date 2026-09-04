@@ -13,6 +13,11 @@ if [ "${EUID:-$(id -u)}" -eq 0 ]; then
     exit 1
 fi
 
+if ! grep -q '__INSTALLER_PATCH__' "$(readlink -f "$0")"; then
+    echo "Error: run install.sh first, then launch divbar from your app menu or ~/.local/bin." >&2
+    exit 1
+fi
+
 readonly APP_NAME="divbar"
 readonly APP_DIR="$HOME/.local/share/applications"
 readonly ICONS_DIR="$HOME/.local/share/icons/hicolor/128x128/apps"
