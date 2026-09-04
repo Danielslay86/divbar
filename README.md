@@ -60,8 +60,6 @@ To remove divs, launch DivBar and pick **Uninstall / Remove**. You get three opt
 Divs on bottom panel:
 ![Bottom taskbar with divs](screenshots/kde-taskbar-bottom.png)
 
-Divs on left panel:
-<img src="screenshots/kde-taskbar-left.png" alt="KDE left taskbar with divs" height="400">
 
 ### GNOME
 ![Main menu](screenshots/gnome-main.png) 
