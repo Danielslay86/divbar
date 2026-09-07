@@ -35,13 +35,7 @@ lives here until it reopens:
     makepkg -si
 
 Uninstall with `sudo pacman -R divbar`.
-------------------------------------------------------------
-From the AUR:
 
-```bash
-yay -S divbar
-```
-------------------------------------------------------------
 From Flathub:
 
 ```bash
