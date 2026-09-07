@@ -36,12 +36,6 @@ lives here until it reopens:
 
 Uninstall with `sudo pacman -R divbar`.
 
-From Flathub:
-
-```bash
-flatpak install flathub net.slaylab.DivBar
-```
-
 The installer puts assets in `~/.local/share/divbar/assets/`, the executable in `~/.local/bin/divbar`, and adds a menu entry. It refreshes the KDE menu cache if you're on Plasma; other DEs pick up new `.desktop` files on their own.
 
 No root needed. Nothing outside `$HOME` gets touched.
