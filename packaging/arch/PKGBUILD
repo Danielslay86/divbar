@@ -1,0 +1,24 @@
+# Maintainer: Daniel Slay <99130682+danielslay86@users.noreply.github.com>
+pkgname=divbar
+pkgver=1.0.1
+pkgrel=1
+pkgdesc="Visual dividers for Linux taskbars, any desktop environment"
+arch=('any')
+url="https://github.com/Danielslay86/divbar"
+license=('MIT')
+depends=('bash')
+optdepends=('zenity: dialogs on GTK desktops'
+            'kdialog: dialogs on KDE Plasma')
+source=("$pkgname-$pkgver.tar.gz::$url/archive/v$pkgver.tar.gz")
+sha256sums=('0938e29787327aeaca36c61e3759f01ac7ac0d0767ae244f70647d5ed688cb69')
+
+package() {
+    cd "$srcdir/$pkgname-$pkgver"
+    sed -i 's|^ASSETS_DIR=.*# __INSTALLER_PATCH__|ASSETS_DIR="/usr/share/divbar/assets" # __INSTALLER_PATCH__|' divbar.sh
+    install -Dm755 divbar.sh "$pkgdir/usr/bin/divbar"
+    install -Dm644 LICENSE "$pkgdir/usr/share/licenses/$pkgname/LICENSE"
+    install -Dm644 README.md "$pkgdir/usr/share/doc/$pkgname/README.md"
+    mkdir -p "$pkgdir/usr/share/divbar/assets"
+    cp -r assets/vertical "$pkgdir/usr/share/divbar/assets/"
+    cp -r assets/horizontal "$pkgdir/usr/share/divbar/assets/"
+}

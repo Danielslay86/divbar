@@ -25,13 +25,23 @@ git clone https://github.com/danielslay86/divbar.git
 cd divbar
 bash install.sh
 ```
+### Arch, Endeavour, Manjaro
 
+The AUR isn't accepting new maintainer accounts right now, so the package
+lives here until it reopens:
+
+    git clone https://github.com/Danielslay86/divbar.git
+    cd divbar/packaging/arch
+    makepkg -si
+
+Uninstall with `sudo pacman -R divbar`.
+------------------------------------------------------------
 From the AUR:
 
 ```bash
 yay -S divbar
 ```
-
+------------------------------------------------------------
 From Flathub:
 
 ```bash
